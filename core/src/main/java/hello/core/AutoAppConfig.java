@@ -6,7 +6,7 @@ import org.springframework.context.annotation.FilterType;
 
 @Configuration //설정정보 선언
 @ComponentScan(
-        basePackages = "hello.core.member", //컴포넌트 스캔 시작할 경로지정. 없으면 모든 자바코드를 다 뒤진다.
+        basePackages = "hello.core", //컴포넌트 스캔 시작할 경로지정. 없으면 모든 자바코드를 다 뒤진다.
         //자동으로 컴포넌트 긁어오는데 그중에서 뺄 거 지정
         excludeFilters = @ComponentScan.Filter(
                 // Configuration 애노테이션 붙은건 뺀다. 다른 Configuration 읽는 거 방지
